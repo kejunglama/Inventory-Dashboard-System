@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+RewriteRule ^index index.php [NC,L]
+RewriteRule ^product pages/product.php [NC,L]
+RewriteRule ^login pages/login.html [NC,L]
+RewriteRule ^logout includes/logout.php [NC,L]
